@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-Enhanced Creative Resume</title>
+  <link rel="stylesheet" href="SHRISTI GAUR resume.css">
+</head>
+<body>
+  <div class="background">
+    <!-- Creating moving background elements -->
+    <span style="top: 10%; left: 10%; animation-duration: 10s;"></span>
+    <span style="top: 50%; left: 30%; animation-duration: 12s;"></span>
+    <span style="top: 80%; left: 70%; animation-duration: 15s;"></span>
+    <span style="top: 40%; left: 90%; animation-duration: 20s;"></span>
+    <span style="top: 20%; left: 50%; animation-duration: 25s;"></span>
+  </div>
+
+  <div class="container">
+    <div class="header">
+      <h2>SHRISTI GAUR</h2>
+      <p>BCA Student | Aspiring Developer | Creative </p>
+    </div>
+
+    <div class="buttons">
+      <button onclick="scrollToSection('about')">About Me</button>
+      <button onclick="scrollToSection('skills')">Skills</button>
+      <button onclick="scrollToSection('contact')">Contact</button>
+    </div>
+
+    <div class="section" id="about">
+      <h2>About Me</h2>
+      <p><h3>STRIAGHT</h3>
+        I am very pasionative to my skills and learn new things, I also thing only postive thing in my mind.
+        I have good personality to learn and join new skills in my daily life. 
+      <h3>WEAKNESS</h3>
+      I have my good persionality but it is also my weakness for give a chance to everyone.
+      </p>
+    </div>
+
+    <div class="section" id="skills">
+      <h2>Skills</h2>
+      <p>HTML, CSS, DBMS, <a href="Coursera certificate.pdf">Project</a></p>
+      <p>Problem-solving, teamwork, and adaptability</p>
+      <p>Building responsive and creative designs</p>
+    </div>
+
+    <div class="section" id="contact">
+      <h2>Contact</h2>
+      <p>Email: shristigaur24@navgurukul.com</p>
+      <p>Discord: </p>
+      <p><button onclick="generateSuggestion()">Tips for cerrier</button></p>
+      <p id="ai-suggestion" style="color: #76c7c0; font-style: italic;"></p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2024 Your Name | Powered by Creativity & AI
+  </footer>
+
+  <script>
+    // Function to scroll to sections
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Simulated AI feature
+    function generateSuggestion() {
+      const suggestions = [
+        "Consider learning a new programming language this month!",
+        "Focus on building a portfolio with 3 creative projects.",
+        "Start contributing to open-source projects to improve your skills.",
+        "Networking with professionals can help boost your career."
+      ];
+      const randomSuggestion = suggestions[Math.floor(Math.random() * suggestions.length)];
+      document.getElementById('ai-suggestion').innerText = randomSuggestion;
+    }
+  </script>
+</body>
+</html>
